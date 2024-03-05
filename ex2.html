@@ -1,0 +1,14 @@
+<script>
+    //faça um programa que leia 5 números e imprima em ordem decrescente
+    let numeros = []
+    for (let i = 1; i <= 5; i++) {
+        let num = parseInt(prompt(`escreva o ${i} número: `))
+        numeros.push(num)
+    }
+    numeros.sort((a,b) => b - a) //a é menor que b em algum critério de ordenação
+
+    document.write("numeros em ordem decrescente: ")
+    numeros.forEach((num) => {
+        document.write(num)
+    })
+</script>

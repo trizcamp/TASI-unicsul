@@ -1,0 +1,21 @@
+<script>
+    //faça um programa que leia 3 valores e infrome se é um triagulo escaleno, isoceles ou equilatero
+    /*  Equilátero: Os três lados são iguais.
+        Isósceles: Dois lados são iguais e o terceiro é diferente.
+        Escaleno: Todos os lados são diferentes.
+    */
+
+   let ladoA = parseInt(prompt("digite o numero do lado 1"))
+   let ladoB = parseInt(prompt("digite o numero do lado 2"))
+   let ladoC = parseInt(prompt("digite o numero do lado 3"))
+
+   if (ladoA === ladoB && ladoB === ladoC) {
+            alert("Triângulo Equilátero");
+        } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+            alert("Triângulo Isósceles");
+        } else {
+            alert("Triângulo Escaleno");
+        }
+
+
+</script>
